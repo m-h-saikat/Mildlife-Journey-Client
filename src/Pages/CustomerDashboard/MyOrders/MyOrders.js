@@ -44,7 +44,7 @@ const MyOrders = () => {
                     <tr className="bg-dark text-white mb-3 p-2" style={{ border: "1px solid red" }}>
                         <th  >Package</th>
                         <th >Image</th>
-                        <th >Price</th>
+                        <th >Cost</th>
                         <th >Person</th>
                         <th >Amount</th>
                         <th >Date</th>

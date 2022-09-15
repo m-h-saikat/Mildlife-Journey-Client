@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import UseAuth from '../../../hooks/useAuth';
 import './AllOrders.css'
 
 
@@ -8,7 +7,6 @@ import './AllOrders.css'
 
 const AllOrders = () => {
     const [orders, setOrders] = useState([])
-    const { user } = UseAuth()
 
     const [status, setStatus] = useState('')
     // const { user } = allContexts
@@ -52,7 +50,7 @@ const AllOrders = () => {
                         <th >Number</th>
                         <th >Package</th>
                         <th >Image</th>
-                        <th >Price</th>
+                        <th >Cost</th>
                         <th >Person</th>
                         <th >Amount</th>
                         <th >Date</th>

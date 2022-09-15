@@ -37,8 +37,14 @@ Add Hotel Booking Info                  </span>
                         <span className="shadow-input1"></span>
                     </div>
 
+                    <div className="wrap-input1 validate-input" data-validate="url">
+                        <input type="text" />
+                        <input className="input1" placeholder="Duration"  {...register("duration",)} />
+                        <span className="shadow-input1"></span>
+                    </div>
+
                     <div className="wrap-input1 validate-input" data-validate="Subject is required">
-                        <input className="input1" placeholder="Price" type="number" {...register("price")} />
+                        <input className="input1" placeholder="Cost" type="number" {...register("price")} />
                         <span className="shadow-input1"></span>
                     </div>
 

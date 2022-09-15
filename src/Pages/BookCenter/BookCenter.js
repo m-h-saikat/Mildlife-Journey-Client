@@ -33,11 +33,11 @@ const BookCenter = () => {
                   <div className=" text-center">
                     <small className="text-muted">
                       <h3 className="text-primary mt-1 mb-5">
-                        Price: {singlebookCenter.price}
+                      Cost: {singlebookCenter.price}
                       </h3> 
                       <Link to={`/bookCenter/${singlebookCenter._id}`}>
                         <button className="btn btn-danger mb-5">
-                        <i className="fas fa-cart-plus"></i> Book Center 
+                        <i className="fas fa-cart-plus"></i> Book Hotel 
                         </button>
                       </Link>
                     </small>

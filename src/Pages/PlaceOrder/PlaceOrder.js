@@ -86,7 +86,7 @@ const PlaceOrder = () => {
               <input
                 className="input1"
                 defaultValue={selected.price}
-                placeholder="price"
+                placeholder="Cost"
                 {...register("price", { required: true })}
               />
             </div>

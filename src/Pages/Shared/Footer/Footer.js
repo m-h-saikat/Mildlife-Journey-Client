@@ -25,8 +25,8 @@ const Footer = () => {
             <div className="col-md-5">
               <div className="right-footer-container">
                 <h3 className="mb-3">Sign up for the newsletter</h3>
-               
-                <input 
+
+                <input
                   className="footer-input text-center"
                   type="text"
                   placeholder="Enter Your Email"
@@ -34,12 +34,14 @@ const Footer = () => {
                 <button className="btn btn-primary">Subscribe</button>
                 <div className="phone d-flex align-items-center justify-content-center mt-5">
                   <div>
-                    <h5><i className="fas fa-phone-alt"></i> +88 01961-264444</h5>
+                    <h5><i className="fas fa-phone-alt"></i> +88 01580481281
+                    </h5>
                   </div>
                 </div>
                 <div className="map d-flex align-items-center  mt-2 justify-content-center">
                   <div>
-                    <p className="mt-2 "><i className="fas fa-map-marker-alt"></i> 230 Uttara,Dhaka Bangladesh.</p>
+                    <p className="mt-2 "><i className="fas fa-map-marker-alt"></i> Dania, Jatrabari, Dhaka -1236
+                      .</p>
                   </div>
                 </div>
               </div>
@@ -49,9 +51,9 @@ const Footer = () => {
             <div className="col-md-3">
               <div className="left-container text-center mt-2 mx-auto">
                 <h3>Pay With</h3>
-               
+
                 <img src={Payment} alt="" width="100%" height="150px" className="mx-auto" />
-                
+
               </div>
             </div>
           </div>

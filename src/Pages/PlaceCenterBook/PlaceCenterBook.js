@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
-import Calendar from "react-calendar";
-import { Button, Modal } from "react-bootstrap";
 
 
 const PlaceCenterBook = () => {
@@ -13,11 +11,8 @@ const PlaceCenterBook = () => {
     const { user } = useAuth();
     // const { user } = allContexts
     const [selected, setSelected] = useState({});
-    const [value, onChange] = useState(new Date());
-    const [show, setShow] = useState(false);
+    const [value] = useState(new Date());
   
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
   
     useEffect(() => {
       fetch(`http://localhost:5000/bookCenter/${id}`)
@@ -86,7 +81,7 @@ const PlaceCenterBook = () => {
                 <input
                   className="input1"
                   defaultValue={selected.price}
-                  placeholder="price"
+                  placeholder="Cost"
                   {...register("price", { required: true })}
                 />
               </div>
@@ -182,7 +177,7 @@ const PlaceCenterBook = () => {
               <div className="container-contact1-form-btn">
                 <button type="submit" className="contact1-form-btn">
                   <span>
-                    Book Center
+                    Book Hotel
                     <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                   </span>
                 </button>

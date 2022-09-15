@@ -38,7 +38,7 @@ const Payment = () => {
           <thead>
             <tr>
               <th>Product Name</th>
-              <th>Price</th>
+              <th>Cost</th>
             </tr>
           </thead>
           <tbody>

@@ -12,7 +12,7 @@ const AllPackages = () => {
     
     return (
       <div id="packages ">
-     <img src={AllPackage} className="img-fluid"/>
+     <img src={AllPackage} alt="..." className="img-fluid"/>
     
         <div className="row row-cols-1 row-cols-md-3 m-2  ">
           {packages.map((singlePackage) => (
@@ -34,7 +34,7 @@ const AllPackages = () => {
                 <div className=" text-center">
                   <small className="text-muted">
                     <h2 className="text-primary mt-1 mb-5">
-                      Price: {singlePackage.price}
+                      Cost: {singlePackage.price}
                     </h2> 
                     <Link to={`/placeOrder/${singlePackage._id}`}>
                       <button className="btn btn-danger mb-5 ">

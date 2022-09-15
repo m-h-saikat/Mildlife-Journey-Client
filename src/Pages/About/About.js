@@ -8,15 +8,18 @@ const About = () => {
 
         <div className="">
             <section>
-            <img src={AboutImg} className="img-fluid " />
+            <img src={AboutImg} className="img-fluid " alt="..."/>
 
                 <div className="container">
                     <div className="row">
 
                         <div className="col-md-12">
+<h1 className='text-center'>‘Mild life journey ’</h1>
 
-
-                            <p className="AboutUS py-5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi necessitatibus, quo blanditiis quis doloribus consequatur voluptatem asperiores, reprehenderit explicabo ullam quibusdam rem, exercitationem illo placeat! Eius, eum minus. Qui quis architecto corrupti porro nostrum sequi, unde obcaecati possimus omnis optio voluptatibus quidem iure temporibus molestiae eum saepe, enim commodi nemo. Consequatur suscipit magnam cumque officia dolores ipsum quidem autem? Distinctio odio nesciunt accusantium ab dolorum quis neque voluptatibus optio vero temporibus ullam quidem illo at dolor obcaecati, voluptate commodi nam hic perferendis magni sit! Totam quod soluta id adipisci distinctio. Molestias, quod? Unde, ducimus sequi, corrupti molestiae soluta tempora itaque aperiam esse sunt iure neque eos iusto tenetur harum officia. Ad maxime odit tenetur aperiam numquam dolores, recusandae reiciendis cumque?
+                            <p className="AboutUS py-5"> 
+                            “Travel is the main thing you purchase that makes you more extravagant”. We, at ‘Mild life journey ’, swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly.
+<br/> We have been moving excellent encounters for a considerable length of time through our cutting-edge planned occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.
+<br/> Through our exceptionally curated occasion bundles, we need to take you on an adventure where you personally enjoy the stunning magnificence of America and far-off terrains. We need you to observe sensational scenes that are a long way past your creative ability.
 
                             </p>
                         </div>
