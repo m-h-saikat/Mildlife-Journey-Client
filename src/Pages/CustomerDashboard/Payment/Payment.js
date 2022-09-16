@@ -17,7 +17,7 @@ const Payment = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrder/${user?.email}
+    fetch(`https://mildlife-journey-server.vercel.app/myOrder/${user?.email}
     `)
       .then((res) => res.json())
       .then((data) => setTotalOrder(data));

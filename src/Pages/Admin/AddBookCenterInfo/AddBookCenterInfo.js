@@ -8,7 +8,7 @@ const AddBookCenterInfo = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/bookCenter', data)
+        axios.post('https://mildlife-journey-server.vercel.app/bookCenter', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added to Database successfully')

@@ -15,7 +15,7 @@ const PlaceCenterBook = () => {
   
   
     useEffect(() => {
-      fetch(`http://localhost:5000/bookCenter/${id}`)
+      fetch(`https://mildlife-journey-server.vercel.app/bookCenter/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setSelected(data);
@@ -29,7 +29,7 @@ const PlaceCenterBook = () => {
       data.status = "Pending";
       data.date = value.toLocaleDateString();
   
-      fetch(`http://localhost:5000/addOrders`, {
+      fetch(`https://mildlife-journey-server.vercel.app/addOrders`, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(data),

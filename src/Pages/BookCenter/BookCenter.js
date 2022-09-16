@@ -5,7 +5,7 @@ const BookCenter = () => {
 
     const [bookCenter, setBookCenters] = useState([]);
     useEffect(() => {
-      fetch(`http://localhost:5000/bookCenter`)
+      fetch(`https://mildlife-journey-server.vercel.app/bookCenter`)
         .then((res) => res.json())
         .then((data) => setBookCenters(data));
     }, []);

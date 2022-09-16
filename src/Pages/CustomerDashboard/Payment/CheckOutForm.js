@@ -15,7 +15,7 @@ const CheckOutForm = ({ sum }) => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:5000/create-payment-intent", {
+      .post("https://mildlife-journey-server.vercel.app/create-payment-intent", {
         price: price,
       })
       .then(function (response) {
@@ -81,7 +81,7 @@ const CheckOutForm = ({ sum }) => {
 
     axios
       .put(
-        `http://localhost:5000/bookedService/${user.email}`,
+        `https://mildlife-journey-server.vercel.app/bookedService/${user.email}`,
         {
           payment: payment,
         }

@@ -111,7 +111,7 @@ const useFirebase = () => {
   //SAVE USER TO DATABASE
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("http://localhost:5000/addUserInfo", {
+    fetch("https://mildlife-journey-server.vercel.app/addUserInfo", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -126,7 +126,7 @@ const useFirebase = () => {
 
   const [isAdmin, setIsAdmin] = useState(false);
   useEffect(() => {
-    fetch(`http://localhost:5000/checkAdmin/${user?.email}`)
+    fetch(`https://mildlife-journey-server.vercel.app/checkAdmin/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         if (data[0]?.role === "admin") {

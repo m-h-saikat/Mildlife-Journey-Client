@@ -1,5 +1,4 @@
 import React from 'react';
-import About from '../About/About';
 import Packages from '../Packages/Packages';
 
 
@@ -11,9 +10,10 @@ const Home = () => {
     return (
 <div>
 <Banner></Banner>
+<FAQ></FAQ>
+
 <Packages></Packages>
 <Decoration></Decoration>
-<FAQ></FAQ>
 <CustomerReviews></CustomerReviews>
 
         </div>

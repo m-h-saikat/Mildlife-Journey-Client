@@ -18,7 +18,7 @@ const PlaceOrder = () => {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/packages/${id}`)
+    fetch(`https://mildlife-journey-server.vercel.app/packages/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setSelected(data);
@@ -33,7 +33,7 @@ const PlaceOrder = () => {
     data.date = value.toLocaleDateString();
     data.totalCost = selected.price * data.person;
 
-    fetch(`http://localhost:5000/addOrders`, {
+    fetch(`https://mildlife-journey-server.vercel.app/addOrders`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

@@ -5,7 +5,7 @@ import AllPackage from "../../Assets/img/header-bg-1.png"
 const AllPackages = () => {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-      fetch(`http://localhost:5000/packages`)
+      fetch(`https://mildlife-journey-server.vercel.app/packages`)
         .then((res) => res.json())
         .then((data) => setPackages(data));
     }, []);

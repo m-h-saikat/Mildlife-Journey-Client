@@ -3,7 +3,7 @@ import "./Galary.css";
 const Galary = () => {
   const [galaries, setGalaries] = useState();
   useEffect(() => {
-    fetch(`http://localhost:5000/galary`)
+    fetch(`https://mildlife-journey-server.vercel.app/galary`)
       .then((res) => res.json())
       .then((data) => setGalaries(data));
   });
