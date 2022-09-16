@@ -1,20 +1,11 @@
-# The White Hall
+# Mildlife Journey
 
-
-Web applications especially Web apps are becoming very popular day by
-day. Many people in Bangladesh are now interested to arrange programs in
-community centers. There are a lot of community centers in Bangladesh and
-many are launching their business. But none of them has their own web
-applications. So, we’ve decided to develop a web application for a
-community center.<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). -->
+The “Travel Management System” software has been developed to store tourist’s information, manages tourist and packages through this system. This system maintain proper schedule of a tourist. This system also helps to select packages, book hotel, transportation and payment easily. This help to manage the whole travel agency. This system provides any type of report that related with Travel Management.
 
 ## About This Project
-Our application has features like checking the availability of the community
-center for reservation, checking food packages offered by the community
-center, admin can add food menu, updating food menu, admin account
-creation, booking a day or evening slot, messaging, etc. There will be an
-admin portal to confirm the booking and some other tasks and a payment
-gateway to confirm booking money.
+The Management Information System (MIS) is a concept which is very important for modern life that makes our life more convenient. With increasing the use of Technology, Our Works has been Gradually Computerized. Now a day’s Large Numbers of Works are Completed within a shorten time and also doing less work. 
+An Travel management system is a database system which can be used for mapping an Travel agency’s daily work. It is configurable and can be configured to meet most individual needs. It is a multi-user system. This Application is very easy to use. It can work accurately and very smoothly in different scenario. It reduces effort work load and increase efficiency in work. In aspects of time value it is worthy.
+
 ##Technologies Used for Building the site
 
 ### `React JS `
@@ -51,8 +42,6 @@ Font Awesome Icons have been used to design.
 
 HTML & CSS is a core part for building a site. I have also used HTML & CSS.
 ### `Firebase LIVE SITE LINK`
-[LiveSite](https://the-white-hall.web.app/) --click to view Live Site
+[LiveSite](https://mildlife-journey.netlify.app/) --click to view Live Site
 
-# Mildlife-Journey-Client
-# Mildlife-Journey-Client
-"# Mildlife-Journey-Client" 
+
