@@ -54,7 +54,7 @@ const PlaceOrder = () => {
             <img src={selected.img} className="card-img-top" alt="..." />
             <div className="card-body">
               <h1 className="card-title">{selected.name}</h1>
-              <p className="card-text">{selected.short_description}</p>
+              <p className="card-text">{selected.desc}</p>
             </div>
           </div>
         </div>
@@ -142,6 +142,15 @@ const PlaceOrder = () => {
             </div>
 
             <div
+              className="wrap-input1 validate-input ml-5"
+            >
+              <p> <b>Bkash :</b> 01872400423 <br/>
+                 <b>Nogod :</b> 01872400423 <br/>
+                <b>Rocket: </b>01400573702</p>
+            </div>
+
+
+            <div
               className="wrap-input1 validate-input"
             >
               <input
@@ -203,10 +212,10 @@ const PlaceOrder = () => {
               </div>
             </div>
 
-            <div className="container-contact1-form-btn">
+            <div className="container-contact1-form-btn mb-5">
               <button type="submit" className="contact1-form-btn">
                 <span>
-                  Order Now
+                  Book Now
                   <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                 </span>
               </button>

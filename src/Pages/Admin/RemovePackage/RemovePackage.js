@@ -45,7 +45,7 @@ const RemovePackage = () => {
                                 <p className="card-text">{singlePackage.desc}</p>
                             </div>
                             <div className="  text-center">
-                                <button className="btn btn-danger mx-2 mb-4" onClick={() => handelDelete(singlePackage._id)}>Delete Food Package</button>
+                                <button className="btn btn-danger mx-2 mb-4" onClick={() => handelDelete(singlePackage._id)}>Delete Package</button>
                             </div>
                         </div>
                     </div>)

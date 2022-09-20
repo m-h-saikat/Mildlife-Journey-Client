@@ -28,7 +28,7 @@ const Contact = () => {
                                 <p>mildlifej@gmail.com</p>
                             </div>
                             <div className="single-contact">
-                                <span>STORE LOCATION</span>
+                                <span>LOCATION</span>
                                 <p>Dania, Jatrabari, Dhaka -1236</p>
                             </div>
                             <div className="single-contact">

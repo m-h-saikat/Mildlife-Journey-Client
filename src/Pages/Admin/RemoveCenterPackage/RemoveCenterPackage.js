@@ -33,7 +33,7 @@ const RemoveCenterPackage = () => {
         <div>
         <div className="row">
         </div>
-        <div className="d-flex mt-5 justify-content-center "><h1>Center Package</h1></div>
+        <div className="d-flex mt-5 justify-content-center "><h1>Hotel Information</h1></div>
         <div className="container text-black mt-5 mb-5" >
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {bookCenter.map(singlebookCenter => <div className="col" key={singlebookCenter.key} >
@@ -44,7 +44,7 @@ const RemoveCenterPackage = () => {
                             <p className="card-text">{singlebookCenter.desc}</p>
                         </div>
                         <div className=" text-center">
-                            <button className="btn btn-danger mb-4" onClick={() => handelDelete(singlebookCenter._id)}>Delete Center Package</button>
+                            <button className="btn btn-danger mb-4" onClick={() => handelDelete(singlebookCenter._id)}>Delete Hotel</button>
                         </div>
                     </div>
                 </div>)

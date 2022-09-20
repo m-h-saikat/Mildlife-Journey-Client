@@ -42,35 +42,35 @@ const MyOrders = () => {
             <table className="table table-dark text-center table-responsive" style={{ width: "100%" }}>
                 <thead  >
                     <tr className="bg-dark text-white mb-3 p-2" style={{ border: "1px solid red" }}>
-                        <th  >Package</th>
-                        <th >Image</th>
-                        <th >Cost</th>
-                        <th >Person</th>
-                        <th >Amount</th>
-                        <th >Date</th>
-                        <th >Contact</th>
-                        <th >Payment Method</th>
-                        <th >Payment Number</th>
-                        <th >Txn Id</th>
-                        <th >Status</th>
-                        <th >Action</th>
+                        <th  className="text-center" >Package</th>
+                        <th  className="text-center">Image</th>
+                        <th  className="text-center">Cost</th>
+                        <th  className="text-center">Person</th>
+                        <th  className="text-center">Amount</th>
+                        <th  className="text-center">Date</th>
+                        <th  className="text-center">Contact</th>
+                        <th  className="text-center">Payment Method</th>
+                        <th  className="text-center">Payment Number</th>
+                        <th  className="text-center">Txn Id</th>
+                        <th  className="text-center">Status</th>
+                        <th  className="text-center">Action</th>
                     </tr>
                 </thead>
                 {orders?.map((order) => (
                     <tbody>
                         <tr role="row" style={{ border: "2px solid gray" }} >
-                            <td>{order.name}</td>
-                            <td><img style={{ width: "70px", height: "50px" }} src={order.img} alt="" /></td>
-                            <td>{order.price}</td>
-                            <td>{order.person}</td>
-                            <td>{order.totalCost}</td>
-                            <td>{order.date}</td>
-                            <td>{order.contact}</td>
-                            <td>{order.payment_method}</td>
-                            <td>{order.payment_number}</td>
-                            <td>{order.txn_id}</td>
-                            <td>{order.status}</td>
-                            <td> <button
+                            <td className="text-center">{order.name}</td>
+                            <td className="text-center"><img style={{ width: "70px", height: "50px" }} src={order.img} alt="" /></td>
+                            <td className="text-center">{order.price}</td>
+                            <td className="text-center">{order.person}</td>
+                            <td className="text-center">{order.totalCost}</td>
+                            <td className="text-center">{order.date}</td>
+                            <td className="text-center">{order.contact}</td>
+                            <td className="text-center">{order.payment_method}</td>
+                            <td className="text-center">{order.payment_number}</td>
+                            <td className="text-center">{order.txn_id}</td>
+                            <td className="text-center">{order.status}</td>
+                            <td className="text-center"> <button
                                 className="btn btn-danger"
                                 onClick={() => handleOrderCancel(order._id)}
                             >

@@ -47,40 +47,40 @@ const AllOrders = () => {
                 <thead  >
                     <tr className="bg-dark text-white mb-3 p-2" style={{ border: "1px solid red" }}>
 
-                        <th >Number</th>
-                        <th >Package</th>
-                        <th >Image</th>
-                        <th >Cost</th>
-                        <th >Person</th>
-                        <th >Amount</th>
-                        <th >Date</th>
-                        <th >User Email</th>
-                        <th >User Address</th>
-                        <th >Contact Number</th>
-                        <th >Payment Method</th>
-                        <th >Payment Number</th>
-                        <th >Txn Id</th>
-                        <th >Status</th>
-                        <th >Update</th>
+                        <th  className="text-center">Number</th>
+                        <th  className="text-center">Package</th>
+                        <th  className="text-center">Image</th>
+                        <th  className="text-center">Cost</th>
+                        <th  className="text-center">Person</th>
+                        <th  className="text-center">Amount</th>
+                        <th  className="text-center">Date</th>
+                        <th  className="text-center">User Email</th>
+                        <th  className="text-center">User Address</th>
+                        <th  className="text-center">Contact Number</th>
+                        <th  className="text-center">Payment Method</th>
+                        <th  className="text-center">Payment Number</th>
+                        <th  className="text-center">Txn Id</th>
+                        <th  className="text-center">Status</th>
+                        <th  className="text-center">Update</th>
                     </tr>
                 </thead>
                 {orders?.map((order, index) => (
                     <tbody key={order._id}>
                         <tr role="row" style={{ border: "2px solid gray" }} >
-                            <th scope="row">{index + 1}</th>
-                            <td>{order.name}</td>
-                            <td><img style={{ width: "70px", height: "50px" }} src={order.img} alt="" /></td>
-                            <td>{order.price}</td>
-                            <td>{order.person}</td>
-                            <td>{order.date}</td>
-                            <td>{order.totalCost}</td>
-                            <td>{order.email}</td>
-                            <td>{order.address}</td>
-                            <td>{order.contact}</td>
-                            <td>{order.payment_method}</td>
-                            <td>{order.payment_number}</td>
-                            <td>{order.txn_id}</td>
-                            <td>
+                            <th className="text-center" scope="row">{index + 1}</th>
+                            <td className="text-center">{order.name}</td>
+                            <td className="text-center"><img style={{ width: "70px", height: "50px" }} src={order.img} alt="" /></td>
+                            <td className="text-center">{order.price}</td>
+                            <td className="text-center">{order.person}</td>
+                            <td className="text-center">{order.totalCost}</td>
+                            <td className="text-center">{order.date}</td>
+                            <td className="text-center">{order.email}</td>
+                            <td className="text-center">{order.address}</td>
+                            <td className="text-center">{order.contact}</td>
+                            <td className="text-center">{order.payment_method}</td>
+                            <td className="text-center">{order.payment_number}</td>
+                            <td className="text-center">{order.txn_id}</td>
+                            <td className="text-center">
                                 <div >
                                     <select onChange={handleSelectValue} className="pending p-2 ">
                                         <option defaultValue={order.status}>{order.status}</option>

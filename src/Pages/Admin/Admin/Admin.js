@@ -27,7 +27,7 @@ const Admin = () => {
 
                     <li className="nav-link py-3 border-bottom" onClick={() => setActive('add Book Center to DB')}> <i className="fa fa-first-order" ></i> <small>Add Hotel Booking Info</small></li>
 
-                    <li className="nav-link py-3 border-bottom" onClick={() => setActive('add image to Galary')}> <i className="fa fa-first-order" ></i> <small>Add Galary</small></li>
+                    <li className="nav-link py-3 border-bottom" onClick={() => setActive('add image to Galary')}> <i className="fa fa-first-order" ></i> <small>Add Gallery</small></li>
 
                     <li className="nav-link py-3 border-bottom" onClick={() => setActive('Remove Package')}> <i className="fa fa-cog"></i> <small>Remove Package</small> </li>
 
