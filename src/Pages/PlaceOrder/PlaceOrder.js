@@ -54,7 +54,7 @@ const PlaceOrder = () => {
             <img src={selected.img} className="card-img-top" alt="..." />
             <div className="card-body">
               <h1 className="card-title">{selected.name}</h1>
-              <p className="card-text">{selected.desc}</p>
+              <p className="card-text">{selected.short_description}</p>
             </div>
           </div>
         </div>
