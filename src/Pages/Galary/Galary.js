@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Galary.css";
+import galary from "../../Assets/img/GALLERY.png"
+
+
 const Galary = () => {
   const [galaries, setGalaries] = useState();
   useEffect(() => {
@@ -10,6 +13,8 @@ const Galary = () => {
 
   return (
     <div>
+                  <img src={galary}  width="100%" alt="..."/>
+
       <div className="conatiner">
         <div className="row">
           {galaries?.map((galary) => (

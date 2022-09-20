@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import hotelBook from "../../Assets/img/HOTEL.png"
 
 const BookCenter = () => {
 
@@ -11,6 +12,8 @@ const BookCenter = () => {
     }, []);
     return (
         <div id="packages ">
+                            <img src={hotelBook}  width="100%" alt="..."/>
+
         <h2 className=" my-5 packages-header p-3 m-3 mx-auto text-center">
           All Booking Center Package
         </h2>
