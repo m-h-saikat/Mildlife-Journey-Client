@@ -10,7 +10,7 @@ const CustomerReview = () => {
     const { user } = useAuth()
 
     const onSubmit = (data) => {
-        fetch("https://mildlife-journey-server.vercel.app/addSReview", {
+        fetch("https://morning-waters-52432.herokuapp.com/addSReview", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

@@ -17,7 +17,7 @@ const Payment = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(`https://mildlife-journey-server.vercel.app/myOrder/${user?.email}
+    fetch(`https://morning-waters-52432.herokuapp.com/myOrder/${user?.email}
     `)
       .then((res) => res.json())
       .then((data) => setTotalOrder(data));

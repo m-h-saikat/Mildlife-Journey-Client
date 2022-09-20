@@ -18,7 +18,7 @@ const PlaceOrder = () => {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    fetch(`https://mildlife-journey-server.vercel.app/packages/${id}`)
+    fetch(`https://morning-waters-52432.herokuapp.com/packages/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setSelected(data);
@@ -33,7 +33,7 @@ const PlaceOrder = () => {
     data.date = value.toLocaleDateString();
     data.totalCost = selected.price * data.person;
 
-    fetch(`https://mildlife-journey-server.vercel.app/addOrders`, {
+    fetch(`https://morning-waters-52432.herokuapp.com/addOrders`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

@@ -6,7 +6,7 @@ import galary from "../../Assets/img/GALLERY.png"
 const Galary = () => {
   const [galaries, setGalaries] = useState();
   useEffect(() => {
-    fetch(`https://mildlife-journey-server.vercel.app/galary`)
+    fetch(`https://morning-waters-52432.herokuapp.com/galary`)
       .then((res) => res.json())
       .then((data) => setGalaries(data));
   });

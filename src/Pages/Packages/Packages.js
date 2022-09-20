@@ -8,7 +8,7 @@ const Packages = () => {
 
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-      fetch(" https://mildlife-journey-server.vercel.app/packages")
+      fetch(" https://morning-waters-52432.herokuapp.com/packages")
         .then((res) => res.json())
         .then((data) => setPackages(data));
     }, []);

@@ -15,7 +15,7 @@ const CheckOutForm = ({ sum }) => {
 
   useEffect(() => {
     axios
-      .post("https://mildlife-journey-server.vercel.app/create-payment-intent", {
+      .post("https://morning-waters-52432.herokuapp.com/create-payment-intent", {
         price: price,
       })
       .then(function (response) {
@@ -81,7 +81,7 @@ const CheckOutForm = ({ sum }) => {
 
     axios
       .put(
-        `https://mildlife-journey-server.vercel.app/bookedService/${user.email}`,
+        `https://morning-waters-52432.herokuapp.com/bookedService/${user.email}`,
         {
           payment: payment,
         }

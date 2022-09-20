@@ -7,7 +7,7 @@ const AddGalary = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('https://mildlife-journey-server.vercel.app/galary', data)
+        axios.post('https://morning-waters-52432.herokuapp.com/galary', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added to Image successfully')
