@@ -8,7 +8,7 @@ const AddBookCenterInfo = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('https://morning-waters-52432.herokuapp.com/bookCenter', data)
+        axios.post('https://mildlife-journey-mehedi.vercel.app/bookCenter', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added to Database successfully')

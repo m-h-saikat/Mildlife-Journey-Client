@@ -11,7 +11,7 @@ const AllOrders = () => {
     const [status, setStatus] = useState('')
     // const { user } = allContexts
     useEffect(() => {
-        fetch(`https://morning-waters-52432.herokuapp.com/allOrders`)
+        fetch(`https://mildlife-journey-mehedi.vercel.app/allOrders`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, );
@@ -19,7 +19,7 @@ const AllOrders = () => {
 
 
     const handleUpdate = (id) => {
-        fetch(` https://morning-waters-52432.herokuapp.com/statusUpdate/${id}`, {
+        fetch(` https://mildlife-journey-mehedi.vercel.app/statusUpdate/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),

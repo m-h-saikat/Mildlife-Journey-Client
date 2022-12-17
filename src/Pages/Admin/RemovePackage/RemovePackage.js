@@ -5,7 +5,7 @@ const RemovePackage = () => {
 
     const [packages, setPackages] = useState([])
     useEffect(() => {
-        fetch('https://morning-waters-52432.herokuapp.com/packages')
+        fetch('https://mildlife-journey-mehedi.vercel.app/packages')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])
@@ -13,7 +13,7 @@ const RemovePackage = () => {
     const handelDelete = id => {
         const proceed = window.confirm('Are you sure you want to DELETE this Package')
         if (proceed) {
-            const url = `https://morning-waters-52432.herokuapp.com/packages/${id}`
+            const url = `https://mildlife-journey-mehedi.vercel.app/packages/${id}`
             fetch(url, {
                 method: 'DELETE'
 

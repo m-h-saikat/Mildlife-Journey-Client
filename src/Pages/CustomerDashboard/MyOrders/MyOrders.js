@@ -6,7 +6,7 @@ const MyOrders = () => {
     const [orders, setOrders] = useState([])
     const { user } = useAuth()
     useEffect(() => {
-        fetch(`https://morning-waters-52432.herokuapp.com/myOrder/${user?.email}`)
+        fetch(`https://mildlife-journey-mehedi.vercel.app/myOrder/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, [user?.email]);
@@ -16,7 +16,7 @@ const MyOrders = () => {
     const handleOrderCancel = id => {
         const proceed = window.confirm('Are you sure you want to Cancel this Order')
         if (proceed) {
-            const url = `https://morning-waters-52432.herokuapp.com/cancelOrder/${id}`;
+            const url = `https://mildlife-journey-mehedi.vercel.app/cancelOrder/${id}`;
             fetch(url, {
                 method: 'DELETE'
 

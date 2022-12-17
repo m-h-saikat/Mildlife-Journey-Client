@@ -5,7 +5,7 @@ import AllPackage from "../../Assets/img/header-bg-1.png"
 const AllPackages = () => {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-      fetch(`https://morning-waters-52432.herokuapp.com/packages`)
+      fetch(`https://mildlife-journey-mehedi.vercel.app/packages`)
         .then((res) => res.json())
         .then((data) => setPackages(data));
     }, []);

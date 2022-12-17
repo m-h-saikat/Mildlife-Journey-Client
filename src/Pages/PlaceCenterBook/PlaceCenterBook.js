@@ -15,7 +15,7 @@ const PlaceCenterBook = () => {
   
   
     useEffect(() => {
-      fetch(`https://morning-waters-52432.herokuapp.com/bookCenter/${id}`)
+      fetch(`https://mildlife-journey-mehedi.vercel.app/bookCenter/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setSelected(data);
@@ -29,7 +29,7 @@ const PlaceCenterBook = () => {
       data.status = "Pending";
       data.date = value.toLocaleDateString();
   
-      fetch(`https://morning-waters-52432.herokuapp.com/addOrders`, {
+      fetch(`https://mildlife-journey-mehedi.vercel.app/addOrders`, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(data),

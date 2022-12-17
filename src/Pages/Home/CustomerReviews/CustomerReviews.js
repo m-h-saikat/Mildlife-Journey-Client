@@ -9,7 +9,7 @@ const CustomerReviews = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch(`https://morning-waters-52432.herokuapp.com/review`)
+        fetch(`https://mildlife-journey-mehedi.vercel.app/review`)
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, []);

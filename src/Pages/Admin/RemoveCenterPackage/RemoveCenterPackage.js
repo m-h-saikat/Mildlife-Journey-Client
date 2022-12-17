@@ -5,7 +5,7 @@ const RemoveCenterPackage = () => {
 
     const [bookCenter, setBookCenters] = useState([])
     useEffect(() => {
-        fetch('https://morning-waters-52432.herokuapp.com/bookCenter')
+        fetch('https://mildlife-journey-mehedi.vercel.app/bookCenter')
             .then(res => res.json())
             .then(data => setBookCenters(data))
     }, [])
@@ -13,7 +13,7 @@ const RemoveCenterPackage = () => {
     const handelDelete = id => {
         const proceed = window.confirm('Are you sure you want to DELETE this Package')
         if (proceed) {
-            const url = `https://morning-waters-52432.herokuapp.com/bookCenter/${id}`
+            const url = `https://mildlife-journey-mehedi.vercel.app/bookCenter/${id}`
             fetch(url, {
                 method: 'DELETE'
 
